@@ -27,19 +27,6 @@ h2{
     font-weight: 200;
 }
 
-#mexico-eagle{
-    position: relative;
-    top: 25%;
-    max-width:100%;
-    max-height:100%;
-    
-}
-
-
-
-
-
-
 
 
 
@@ -53,6 +40,14 @@ h2{
     width: 500px;
     border-style: solid;
     margin-bottom: 5rem;
+    overflow: hidden;
+}
+
+.subflag{
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
 }
 
 .horiz{
@@ -72,8 +67,16 @@ h2{
     height: 16.65%;
 }
 
+.twohoriz{
+    width: 50%;
+}
+
 .threehoriz{
     width: 33.3%
+}
+
+.sixhoriz{
+    width: 16.65%;
 }
 
 .skinny{
@@ -131,3 +134,32 @@ h2{
     background-color: white;
 }
 
+#mexico-eagle{
+    position: relative;
+    top: 25%;
+    max-width:100%;
+    max-height:100%;
+}
+
+#finlandhoriz{
+    transform: rotate(90deg);
+    position: relative;
+    right: 15%;
+    z-index: 100;
+}
+
+.srilanka{
+    max-height: 75%;
+    margin: 35px;
+}
+
+#srilanka-left{
+    max-width: 25%;
+}
+
+#srilanka-right{
+    width: 60%;
+    margin-left: 0px;
+
+    
+}
