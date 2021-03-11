@@ -1,0 +1,26 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-between;
+}
+
+.flex-block{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    
+}
+
+.placeholder-img-265{
+    height: 100px;
+    width: 100px;
+}
+
+.placeholder-img-544-291{
+    height: 100px;
+}
