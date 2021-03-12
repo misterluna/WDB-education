@@ -1,16 +1,22 @@
 * {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 h1{
-    font-size: 90px;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 3.75rem;
+    margin: 0;
 }
 
 /* Navigation */
 
 .navbar{
-    position: relative;
-    height: 5vw;
+    height: auto;
 }
 
 .navbar-expand-lg{
@@ -18,62 +24,119 @@ h1{
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    margin: 50px;
+    margin: 0px 50px;
 }
 
 #basic-navbar-nav{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-between;
 }
 
-.navbar-logo{
-    font-size: 85px;
+.navbar-logo h1{
+    font-weight: 500;
 }
 
 #basic-navbar-nav p{
-    font-size: 40px;
+    font-size: 2.5rem;
+    margin: 1rem;
 }
 
 /* Landing/Introduction Text */
 
 #landing{
+    width: 65vw;
+    margin: -50px 50px 30px;
+}
+
+#arrow.center{
     position: relative;
-    width: 75vw;
-    top: 50px;
-    margin: 50px;
+    width: 38px;
+    height: 67px;
+    margin: auto;
+    padding: 50px 0px;
 }
 
 /* Project Flexboxes */
 
 .flex-container{
-    margin: 0s auto;
+    position: relative;
+    top: 50px;
+    margin: 30px auto;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    align-content: space-around;
+    align-content: space-between;
 }
 
 .box{
-    height: 539px;
-    margin: 30px;
+    /* height: 29vw; */
+    margin: 0px auto 30px;
+    overflow: hidden;
 }
 
 .box-item{
+    width: 27.5vw;
+    min-height: 4.16vw;
+    padding: 7.5px;
+    margin-bottom: 8px;
     border-radius: 15px;
     background: #e4e4e4;
-    padding: 15px;
-    margin: 16px auto; 
-    width: 28.3vw;
-    min-height: 4.9vw;
 }
 
 .placeholder-img-sm-sq{
-    width: 13.2vw;
-    height: 13.8vw;
-    margin-bottom: 0px;
+    width: 13.5vw;
+    height: 13.5vw;
+    padding: 0;
+}
+
+.placeholder-img-sm-sq.left{
+    margin-right: 0.6vw;
+}
+
+.placeholder-img-sm-sq.right{
+    margin-left: 0.6vw;
 }
 
 .placeholder-img-lg{
     width: 28.3vw;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1366px) {
+    /* Between tablet and laptop */
+    h1, .navbar-logo{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 2.75rem;
+    }
+
+    #basic-navbar-nav p{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* Between iPhone X and tablet */
+    h1, .navbar-logo{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    #landing{
+        width: auto;
+    }
+
+    #basic-navbar-nav p{
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
 }
