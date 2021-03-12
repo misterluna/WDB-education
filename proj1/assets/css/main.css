@@ -10,12 +10,12 @@ h1{
 }
 
 h2{
-    font-size: 3.75rem;
+    font-size: 3.25rem;
     margin: 0;
 }
 
 p.box-item{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* Navigation */
@@ -46,6 +46,25 @@ p.box-item{
 #basic-navbar-nav p{
     font-size: 2.5rem;
     margin: 1rem;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid #FFF;
+}
+
+.navbar a.active{
+    border-bottom: 3px solid #000;
+}
+
+.navbar a.button{
+    display: inline;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+    color: white;
 }
 
 /* Landing/Introduction Text */
@@ -97,22 +116,22 @@ p.box-item{
     align-items: center;
 }
 
-.placeholder-img-sm-sq{
+.box-img-sm{
     width: 13.5vw;
     height: 13.5vw;
     padding: 0;
 
 }
 
-.placeholder-img-sm-sq.left{
+.box-img-sm.left{
     margin-right: 4px;
 }
 
-.placeholder-img-sm-sq.right{
+.box-img-sm.right{
     margin-left: 4px;
 }
 
-.placeholder-img-lg{
+.box-img-lg{
     width: 27.5vw;
     padding: 0;
 }
