@@ -1,80 +1,92 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <title>Work page</title>
-    </head>
-    <body>
-        <div>
-            <nav>
-                <a>
-                    <h1>Logo.</h1>
-                </a>
-                <div>
-                    <a href="work.html">
-                        <p>Work</p>
-                    </a>
-                    <a>
-                        <p>Play</p>
-                    </a>
-                    <a href="about.html">
-                        <p>About</p>
-                    </a>
-                    <a>
-                        <p>Resume</p>
-                    </a>
-                </div>
-            </nav>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Work page</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="navbar-logo">
+            <a>
+                <h1>Logo.</h1>
+            </a>
         </div>
+        <div id="basic-navbar-nav">
+            <a href="work.html">
+                <p>Work</p>
+            </a>
+            <a>
+                <p>Play</p>
+            </a>
+            <a href="about.html">
+                <p>About</p>
+            </a>
+            <a>
+                <p>Resume</p>
+            </a>
+        </div>
+    </nav>
+    <div id="landing">
         <!-- Introduction Section -->
-        <div>
-            <h1>Hi! 👋 I'm Edward, and I'm a software engineer studying Computer 
-                Science @ UC Berkeley.</h1>
-            <h2>Thanks for stopping by!</h2>
-            <h2>Scroll down to see some of my work.</h2>
+        <h1>Hi! 👋 I'm Edward, and I'm a software engineer studying Computer
+            Science @ UC Berkeley.</h1>
+        <h2>Thanks for stopping by!</h2>
+        <h2>Scroll down to see some of my work.</h2>
+    </div>
+    <div class="flex-container">
+        <!-- Container for project boxes 1-3 -->
+        <div class="box">
+            <!-- Box 1 -->
+            <p class="box-item">Project Name.</p>
+            <p class="box-item">Project Name.</p>
+            <p class="box-item">Project Name.</p>
+            <p class="box-item">Project Name.</p>
+            <p class="box-item">Project Name.</p>
         </div>
-        <div class="flex-wrapper"> <!-- Wrapper for Project Blocks -->
-            <div class="flex-block"> <!-- Block 1 -->
-                <p>Project Name.</p>
-                <p>Project Name.</p>
-                <p>Project Name.</p>
-                <p>Project Name.</p>
-                <p>Project Name.</p>
-            </div>
 
-            <div class="flex-block"> <!-- Block 2 -->
-                <img src="assets/images/placeholder image 265 x 265.png" class="placeholder-img-265">
-                <img src="assets/images/placeholder image 265 x 265.png" class="placeholder-img-265">
-                <p>Project Name.</p>
-                <p>Project Description.</p>
-            </div>
-
-            <div class="flex-block"> <!-- Block 3 -->
-                <img src="assets/images/placeholder image 544 x 291.png" class="placeholder-img-544-291">
-                <p>Project Name.</p>
-                <p>Project Description.</p>
-            </div>
-
-            <div class="flex-block"> <!-- Block 4 -->
-                <img src="assets/images/placeholder image 544 x 291.png" class="placeholder-img-544-291">
-                <p>Project Name.</p>
-                <p>Project Description.</p>
-            </div>
-
-            <div class="flex-block"> <!-- Block 5 -->
-                <img src="assets/images/placeholder image 544 x 291.png" class="placeholder-img-544-291">
-                <p>Project Name.</p>
-                <p>Project Description.</p>
-            </div>
-
-            <div class="flex-block"> <!-- Block 6 -->
-                <img src="assets/images/placeholder image 544 x 291.png" class="placeholder-img-544-291">
-                <p>Project Name.</p>
-                <p>Project Description.</p>
-            </div>
+        <div class="box">
+            <!-- Box 2 -->
+            <img src="assets/images/placeholder image 265 x 265.png" class="box-item placeholder-img-sm-sq">
+            <img src="assets/images/placeholder image 265 x 265.png" class="box-item placeholder-img-sm-sq">
+            <p class="box-item">Project Name.</p>
+            <p class="box-item">Project Description.</p>
         </div>
-    </body>
+
+        <div class="box">
+            <!-- Block 3 -->
+            <img src="assets/images/placeholder image 544 x 291.png" class="box-item placeholder-img-lg">
+            <p class="box-item">Project Name.</p>
+            <p class="box-item">Project Description.</p>
+        </div>
+    </div>
+    <div class="flex-container">
+        <!-- Container for project boxes 4-6 -->
+        <div class="box">
+            <!-- Block 4 -->
+            <img src="assets/images/placeholder image 544 x 291.png" class="box-item placeholder-img-lg">
+            <p class="box-item">Project Name.</p>
+            <p class="box-item">Project Description.</p>
+        </div>
+
+        <div class="box">
+            <!-- Block 5 -->
+            <img src="assets/images/placeholder image 544 x 291.png" class="box-item placeholder-img-lg">
+            <p class="box-item">Project Name.</p>
+            <p class="box-item">Project Description.</p>
+        </div>
+
+        <div class="box">
+            <!-- Block 6 -->
+            <img src="assets/images/placeholder image 544 x 291.png" class="box-item placeholder-img-lg">
+            <p class="box-item">Project Name.</p>
+            <p class="box-item">Project Description.</p>
+        </div>
+    </div>
+</body>
+
 </html>

@@ -2,25 +2,78 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.flex-wrapper{
+h1{
+    font-size: 90px;
+}
+
+/* Navigation */
+
+.navbar{
+    position: relative;
+    height: 5vw;
+}
+
+.navbar-expand-lg{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+#basic-navbar-nav{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.navbar-logo{
+    font-size: 85px;
+}
+
+#basic-navbar-nav p{
+    font-size: 40px;
+}
+
+/* Landing/Introduction Text */
+
+#landing{
+    position: relative;
+    width: 75vw;
+    top: 50px;
+    margin: 50px;
+}
+
+/* Project Flexboxes */
+
+.flex-container{
+    margin: 0s auto;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    align-content: space-between;
+    align-content: space-around;
 }
 
-.flex-block{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    
+.box{
+    height: 539px;
+    margin: 30px;
 }
 
-.placeholder-img-265{
-    height: 100px;
-    width: 100px;
+.box-item{
+    border-radius: 15px;
+    background: #e4e4e4;
+    padding: 15px;
+    margin: 16px auto; 
+    width: 28.3vw;
+    min-height: 4.9vw;
 }
 
-.placeholder-img-544-291{
-    height: 100px;
+.placeholder-img-sm-sq{
+    width: 13.2vw;
+    height: 13.8vw;
+    margin-bottom: 0px;
+}
+
+.placeholder-img-lg{
+    width: 28.3vw;
 }
