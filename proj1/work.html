@@ -6,13 +6,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
     <title>Work page</title>
 </head>
 
-<body>
+<script language="javascript">
+    function normalizeBoxHeights() {
+        document.getElementById('box1').style.height = window.getComputedStyle(document.getElementById('box2')).height;
+    }
+</script>
+
+<body onload="normalizeBoxHeights()">
     <nav class="navbar navbar-expand-lg">
         <div class="navbar-logo">
             <a href="#">
@@ -45,20 +51,20 @@
         <svg width="38" height="67" viewBox="0 0 38 67" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M17.2322 65.7678C18.2085 66.7441 19.7915 66.7441 20.7678 65.7678L36.6777 49.8579C37.654 48.8816 37.654 47.2986 36.6777 46.3223C35.7014 45.346 34.1184 45.346 33.1421 46.3223L19 60.4645L4.85786 46.3223C3.88155 45.346 2.29864 45.346 1.32233 46.3223C0.34602 47.2986 0.34602 48.8816 1.32233 49.8579L17.2322 65.7678ZM16.5 0L16.5 64H21.5L21.5 0L16.5 0Z"
-                fill="black"/>
+                fill="black" />
         </svg>
     </div>
     <div class="flex-container">
-        <div class="box">
+        <div class="box expanded" id="box1">
             <!-- Box 1 -->
-            <p class="box-item">👨‍💻 PHS CODE Academy Website</p>
-            <p class="box-item">📕 Pacifica High School Yearbook</p>
-            <p class="box-item">📸 Photography</p>
-            <p class="box-item">📹 CODE Promo Video 2017</p>
-            <p class="box-item">📹 CODE Promo Video 2018</p>
+            <p class="box-item expanded">👨‍💻 PHS CODE Academy Website</p>
+            <p class="box-item expanded">📕 Pacifica High School Yearbook</p>
+            <p class="box-item expanded">📸 Photography</p>
+            <p class="box-item expanded">📹 CODE Promo Video 2017</p>
+            <p class="box-item expanded">📹 CODE Promo Video 2018</p>
         </div>
 
-        <div class="box">
+        <div class="box" id="box2">
             <!-- Box 2 -->
             <a href="http://www.phscodeacademy.com">
                 <img src="assets/images/code website.png" class="box-item box-img-lg">

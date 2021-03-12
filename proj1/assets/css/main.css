@@ -79,7 +79,7 @@ p.box-item{
     width: 38px;
     height: 67px;
     margin: auto;
-    padding: 50px 0px;
+    padding: 20px 0px;
 }
 
 /* Project Flexboxes */
@@ -109,6 +109,16 @@ p.box-item{
     border-radius: 15px;
     background: #e4e4e4;
     
+}
+
+.box.expanded{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+}
+
+.box-item.expanded{
+    flex-basis: 30%;
 }
 
 p.box-item{
