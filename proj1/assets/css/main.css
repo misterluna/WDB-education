@@ -173,11 +173,34 @@ p.box-item{
     }
 
     #landing{
-        width: auto;
+        width: 80vw;
+        margin-top: -20px;
     }
 
     #basic-navbar-nav p{
         font-size: 1.5rem;
         margin: 1rem;
+    }
+
+    .flex-container{
+        flex-direction: column;
+        margin: auto 10vw;
+    }
+    .box-item{
+        width: 80vw;
+    }
+
+    .box-img-sm{
+        width: 38vw;
+        height: 38vw;
+        padding: 0;
+    }
+    
+    .box-img-sm.left{
+        margin-right: 1.5vw;
+    }
+    
+    .box-img-sm.right{
+        margin-left: 1.5vw;
     }
 }
