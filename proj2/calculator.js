@@ -6,9 +6,28 @@ function setScreen(value) {
     screen.innerHTML = value;
 }
 
+function getScreen() {
+    return parseInt(screen.innerText);
+}
+
+function resetState(screenValue) {
+    lastOperand = undefined;
+    currentOperation = undefined;
+    setScreen(screenValue);
+}
+
 function performMath() {
-    // TODO
-    console.log("Implement operation!");
+    switch (currentOperation) {
+        case "÷":
+            return Math.floor(lastOperand / getScreen());
+        case "×":
+            return lastOperand * getScreen();
+        case "-":
+            return lastOperand - getScreen();
+        case "+":
+            return lastOperand + getScreen();
+    }
+    return 0;
 }
 
 function buttonClick(button) {
@@ -17,24 +36,27 @@ function buttonClick(button) {
     if (operator) {
         switch (value) {
             case "C":
-                lastOperand = undefined;
-                currentOperation = undefined;
-                setScreen(0);
+                resetState(0);
                 break;
             case "=":
-                console.log("Implement operation!");
-                // TODO
+                let result = performMath();
+                resetState(result);
                 break;
             case "←":
-                console.log("Implement operation!");
-                // TODO
+                let currScreen = getScreen();
+                let lastDigit = getScreen() % 10;
+                setScreen((currScreen - lastDigit)/10);
                 break;
-            default:
-                performMath(value);
+            case "÷":
+            case "×":
+            case "-":
+            case "+":
+                lastOperand = getScreen();
+                currentOperation = value;
+                setScreen(0);
         }
     } else {
-        let currentValue = parseInt(screen.innerText);
-        setScreen(10 * currentValue + parseInt(value));
+        setScreen(10 * getScreen() + parseInt(value));
     }
 }
 
