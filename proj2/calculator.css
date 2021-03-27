@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.screen {
+#screen {
     font-size: 4em;
     display: flex;
     height: 120px;
