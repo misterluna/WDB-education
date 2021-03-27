@@ -37,6 +37,14 @@
     color: black;
 }
 
+.calc-button:active {
+    filter: brightness(110%);
+}
+
+.calc-button.right:active {
+    filter: brightness(90%);
+}
+
 .calc-button.double {
     width: 50%;
 }
