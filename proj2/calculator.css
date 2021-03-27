@@ -10,9 +10,9 @@
 }
 
 .screen {
-    font-size: 3.4em;
+    font-size: 4em;
     display: flex;
-    height: 90px;
+    height: 120px;
     font-family: monospace;
     text-align: right;
     align-items: center;
@@ -21,7 +21,7 @@
 
 .calc-button-row {
     display: flex;
-    height: 120px;
+    height: 100px;
     overflow: hidden;
 }
 
@@ -34,6 +34,7 @@
     border-width: 1px;
     border-color: black;
     background-color: lightgray;
+    color: black;
 }
 
 .calc-button.double {
