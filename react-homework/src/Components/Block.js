@@ -4,17 +4,14 @@ class Block extends React.Component {
    
     constructor(props) {
         super(props);
-        this.state = {
-          props: props,
-        };
     }
     
   render() {
 
   const mystyle = {
-      color: 'red'
+      backgroundColor: this.props.color
     };
-  console.log(this.state.props);
+  console.log(this.props.color);
 
   return (
     <>
